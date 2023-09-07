@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tugas Week 3</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Program Checking <br> Kondisi Air dan Jenis BBM</h1>
+
+  <h2>Kondisi Air</h2>
+  <input type="number" id="suhu" placeholder="Masukkan suhu">
+  <button onclick="cekKondisiAir()">Cek Kondisi Air</button>
+  <p id="hasilKondisiAir"></p>
+
+  <h2>Jenis BBM</h2>
+<label for="jenisKendaraan">Pilih Jenis Kendaraan:</label>
+  <select id="jenisKendaraan">
+    <option value="mobil">Mobil</option>
+    <option value="motor">Motor</option>
+  </select>
+<br>
+<label for="platKendaraan">Pilih Plat Kendaraan:</label>
+  <select id="platKendaraan">
+    <option value="kuning">Kuning</option>
+    <option value="merah">Merah</option>
+    <option value="hitam">Hitam</option>
+    <option value="putih">Putih</option>
+  </select>
+<br>
+  <input type="number" id="ccMobil" placeholder="CC Mobil (Khusus Mobil)">
+  <button onclick="cekJenisBBM()">Cek Jenis BBM</button>
+  <p id="hasilJenisBBM"></p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

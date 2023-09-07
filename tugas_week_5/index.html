@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Pendaftaran</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="py-5 text-center">
+          <h1 class="d-block mx-auto mb-4">📃</h1>
+          <h2>Form Daftar Hadir Pernikahan Aa dan Teteh</h2>
+          <p class="lead">Hey guys, kita butuh bantuan kalian nih! Jadi, jangan lupa buat isi form daftar hadir ya. Makin banyak yang ngisi, makin jelas asal duitnya! Jadi, buruan deh, isi formnya sekarang juga biar kita bisa bikin acara ini jadi luar biasa. Thanks, guys!</p>
+        </div>
+        <div class="row g-5">
+          
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" id="regTab" href="#registrasi">Registrasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="listTab" href="#listPendaftar">List Pendaftar</a>
+            </li>
+          </ul>
+
+          <div id="registrasi" class="col-md-12">
+            
+            <form id="regForm" class="needs-validation">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="nama" class="form-label">Nama:</label>
+                  <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap" required>
+                  <div class="invalid-feedback">
+                    Nama lengkapnya diisi ya guys.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="umur" class="form-label">Umur:</label>
+                  <input type="number" class="form-control" id="umur" placeholder="Umur" required>
+                  <div class="invalid-feedback">
+                    Umurnya diisi ya guys.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="uangSaku" class="form-label">Uang Saku:</label>
+                  <input type="number" class="form-control" id="uangSaku" placeholder="Uang Saku" required>
+                  <div class="invalid-feedback">
+                    Umurnya diisi ya guys.
+                  </div>
+                </div>
+                <hr class="my-4">
+                <button type="submit" class="w-100 btn btn-primary btn-lg">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div id="listPendaftar" class="mt-4" style="display:none;">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Nama</th>
+                  <th>Umur</th>
+                  <th>Uang Saku</th>
+                </tr>
+              </thead>
+              <tbody id="pendaftarTable">
+              </tbody>
+            </table>
+            <p class="alert alert-info" id="resume"></p>
+          </div>
+        </main>
+        <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+          <p class="mb-1">Code with 🍵 - Ali</p>
+        </footer>
+      </div>
+      <script src="main.js"></script>
+    </body>
+  </html>
